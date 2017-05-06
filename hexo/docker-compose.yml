@@ -2,7 +2,7 @@ version: '2'
 services:
   hexo:
     container_name: hexo
-    image: fengyao/hexo
+    image: fengyao/hexo:release-v0.05.0601
     restart: always
     environment:
       - GIT_USER=yaoelvon
