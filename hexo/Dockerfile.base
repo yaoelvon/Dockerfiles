@@ -6,7 +6,7 @@ ENV GIT_EMAIL=yaoelvon@gmail.com
 WORKDIR /hexo
 COPY monitor.sh /monitor.sh
 
-chmod a+x /root/.npm/_logs
+RUN chmod a+x /root/.npm/_logs
 
 RUN apk add --update --no-cache git openssh inotify-tools && \
     npm install hexo-cli -g && \
