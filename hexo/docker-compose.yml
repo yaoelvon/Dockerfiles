@@ -1,4 +1,4 @@
-version: '0'
+version: '2'
 services:
   hexo:
     container_name: hexo
