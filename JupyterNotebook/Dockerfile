@@ -17,7 +17,6 @@ USER $NB_USER
 # use notebook-friendly backends in these images
 RUN conda install --quiet --yes \
     'ipywidgets=6.0*' && \
-    conda remove --quiet --yes --force qt pyqt && \
     conda clean -tipsy
 
 # Activate ipywidgets extension in the environment that runs the notebook server
@@ -28,7 +27,6 @@ RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix
 # use notebook-friendly backends in these images
 RUN conda create --quiet --yes -p $CONDA_DIR/envs/python2 python=2.7 \
     'ipywidgets=6.0*' && \
-    conda remove -n python2 --quiet --yes --force qt pyqt && \
     conda clean -tipsy
 
 # Add shortcuts to distinguish pip for python2 and python3 envs
