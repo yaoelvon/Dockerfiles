@@ -28,7 +28,7 @@ docker-compose up -d
 ```
 
 ## 当mysql数据库配置错误时
-报错：Error while trying to create admin user:Failed to connect to the database:An exception occurred in driver:SQLSTATE[HY000] [2002] No such file or directory
+报错：`Error while trying to create admin user:Failed to connect to the database:An exception occurred in driver:SQLSTATE[HY000] [2002] No such file or directory`，检查数据库配置是否正确。
 
 ## 将文件所属和组所属改为www-data
 ```
