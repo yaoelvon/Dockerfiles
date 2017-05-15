@@ -1,1 +1,1 @@
-支持python2.7
+为minimal-notebook增加python2.7支持；
