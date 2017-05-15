@@ -1,0 +1,7 @@
+nextcloud.yaofeng.org {
+  proxy / xx.xx.xx.xxx:2333 {
+	transparent
+  }
+  log /var/log/caddy.log
+  gzip
+}
