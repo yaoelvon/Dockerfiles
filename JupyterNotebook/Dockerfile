@@ -33,10 +33,6 @@ RUN conda create --quiet --yes -p $CONDA_DIR/envs/python2 python=2.7 \
 RUN ln -s $CONDA_DIR/envs/python2/bin/pip $CONDA_DIR/bin/pip2 && \
     ln -s $CONDA_DIR/bin/pip $CONDA_DIR/bin/pip3
 
-# Configure ipython kernel to use matplotlib inline backend by default
-RUN mkdir -p $HOME/.ipython/profile_default/startup
-COPY mplimporthook.py $HOME/.ipython/profile_default/startup/
-
 USER root
 
 # Install Python 2 kernel spec globally to avoid permission problems when NB_UID
