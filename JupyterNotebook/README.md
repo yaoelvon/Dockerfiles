@@ -16,3 +16,6 @@ docker run -d -p 8980:8888 \
     --NotebookApp.password='sha1:149e2303fd48:3591ba2fd67734e116caa2991abb688fc61c008d' \
     --NotebookApp.base_url=/jn
 ```
+
+## 参考
+1.[scipy-notebook](https://github.com/jupyter/docker-stacks/tree/master/scipy-notebook)
